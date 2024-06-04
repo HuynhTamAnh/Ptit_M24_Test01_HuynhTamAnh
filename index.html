@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <h1>Feedback</h1>
+    <div class="container">
+      <div class="cell" onclick="toggleColor(this, 1)">1</div>
+      <div class="cell" onclick="toggleColor(this, 2)">2</div>
+      <div class="cell" onclick="toggleColor(this, 3)">3</div>
+      <div class="cell" onclick="toggleColor(this, 4)">4</div>
+      <div class="cell" onclick="toggleColor(this, 5)">5</div>
+      <div class="cell" onclick="toggleColor(this, 6)">6</div>
+      <div class="cell" onclick="toggleColor(this, 7)">7</div>
+      <div class="cell" onclick="toggleColor(this, 8)">8</div>
+      <div class="cell" onclick="toggleColor(this, 9)">9</div>
+      <div class="cell" onclick="toggleColor(this, 10)">10</div>
+    </div>
+    <div class="input-container">
+      <input id="feedbackInput" type="text" placeholder="Write a review" />
+      <button id="sendButton" class="send-button" onclick="addFeedback()">
+        Send
+      </button>
+    </div>
+    <div id="feedbackList" class="feedback-list"></div>
+    <script src="/dist/index.js"></script>
+  </body>
+</html>
